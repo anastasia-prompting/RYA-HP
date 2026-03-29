@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Канал целительных практик</title>
+    <meta
+      name="description"
+      content="Страница канала целительных практик с ясным описанием формата, вариантами участия и разграничением доступа к материалам."
+    />
+    <!-- Общая логика темы вынесена в отдельный файл. -->
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Быстрый переход к контенту -->
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <!-- Шапка с основной навигацией -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-brand">
+          <span class="site-brand__title">Юлия Перевозникова</span>
+          <span class="site-brand__subtitle">Канал целительных практик</span>
+        </div>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="training.html">Тренинг</a></li>
+            <li><a class="is-active" href="healing-channel.html" aria-current="page">Канал практик</a></li>
+            <li><a href="therapy.html">Терапия</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основное содержимое страницы -->
+    <main
+      id="main-content"
+      class="page-main"
+      data-product-access-root
+      data-product-id="healing"
+      data-product-name="Канал целительных практик"
+      data-badge-guest="Доступ: обзор канала"
+      data-badge-registered="Доступ: обзор и оплата"
+      data-badge-paid="Доступ: открыт полностью"
+      data-status-guest="Вы пока не зарегистрированы. Сейчас доступны описание канала, кому он подойдёт, как всё устроено и обзор форматов. Зарегистрируйтесь, чтобы выбрать оплату и открыть материалы полностью."
+      data-status-registered="Вы зарегистрированы. Сейчас можно спокойно изучить структуру канала, варианты участия и перейти к демонстрационной оплате."
+      data-status-paid="Оплата подтверждена в демонстрационном режиме. Вам доступны описание, структура канала, архив и полный комплект материалов участника."
+      data-panel-status-guest="Сейчас можно познакомиться с каналом и понять, подходит ли вам формат. Для оплаты и полного доступа потребуется регистрация."
+      data-panel-status-registered="Выберите спокойный для себя формат участия и переходите к оплате, если хотите открыть материалы полностью."
+      data-panel-status-paid="Доступ открыт. Можно переходить к полным материалам и записям ниже."
+    >
+      <section class="hero">
+        <div class="container">
+          <div class="hero__box">
+            <span class="eyebrow">Регулярная поддержка</span>
+            <h1 class="hero__title">Канал целительных практик</h1>
+            <p class="hero__text">
+              Пространство мягкой регулярной поддержки через медитации, внутреннюю работу
+              и бережный ритм. Формат подойдёт тем, кто устал жить в напряжении,
+              много держится, мало отдыхает и хочет постепенно возвращать себе спокойствие,
+              ясность и контакт с собой.
+            </p>
+            <ul class="access-list hero-feature-list">
+              <li>регулярные авторские медитации без перегруза и давления;</li>
+              <li>возможность проходить практики в своём темпе и возвращаться к записям;</li>
+              <li>мягкое изменение состояния без попытки «ломать» себя;</li>
+              <li>формат подходит и тем, кто только начинает практики, и тем, кто уже знаком с медитацией.</li>
+            </ul>
+            <div class="hero__actions">
+              <a class="button" href="#healing-access">Проверить доступ</a>
+              <a class="button button--secondary" href="#healing-formats">Посмотреть формат</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Общая панель статуса доступа и демонстрационной оплаты -->
+      <section class="section section--compact" id="healing-access">
+        <div class="container">
+          <article class="content-block access-panel" aria-labelledby="healing-access-title">
+            <div class="access-panel__header">
+              <div class="access-panel__copy">
+                <span class="eyebrow">Доступ к материалам</span>
+                <h2 id="healing-access-title" class="access-panel__title">Статус вашего доступа к каналу практик</h2>
+                <p class="access-panel__text" data-access-status-text>
+                  В зависимости от статуса можно просматривать описание, форматы участия,
+                  структуру канала или полный набор материалов.
+                </p>
+              </div>
+              <div class="access-badge" data-access-status-badge>Проверяем статус</div>
+            </div>
+
+            <div class="selected-plan-panel" data-selected-plan-panel hidden>
+              <p class="selected-plan-panel__label">Выбранный формат</p>
+              <p class="selected-plan-panel__value" data-selected-plan-name>—</p>
+              <p class="selected-plan-panel__price" data-selected-plan-price>—</p>
+            </div>
+
+            <div class="access-actions">
+              <a class="button" href="index.html#registration" data-access-action="register">Зарегистрироваться</a>
+              <a class="button button--secondary" href="index.html#personal-cabinet" data-access-action="cabinet" hidden>Открыть личный кабинет</a>
+              <button class="button" type="button" data-payment-button hidden>Оплатить доступ</button>
+              <a class="button button--secondary" href="#healing-full-access" data-access-action="materials" hidden>Получить доступ</a>
+            </div>
+
+            <p class="form-status" data-payment-status aria-live="polite"></p>
+
+            <div class="access-note">
+              <strong>Демо-режим оплаты:</strong> выбор тарифа и оплата пока работают на фронтенде через локальное хранилище браузера.
+              Позже здесь можно подключить реальный backend и платёжный шлюз без переписывания структуры страницы.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Краткое описание доступно всем посетителям -->
+      <section class="section">
+        <div class="container">
+          <article class="content-block access-section" aria-labelledby="healing-course-title">
+            <div class="access-section__header">
+              <span class="eyebrow">О чём этот курс</span>
+              <h2 id="healing-course-title" class="section-title">Бережный формат для постепенного выхода из режима напряжения</h2>
+              <p class="section-intro">
+                Когда человек долго живёт в напряжении, контроле, ожидании проблем или усталости,
+                это становится привычным способом воспринимать жизнь. Этот курс создан не для того,
+                чтобы «исправить» вас, а чтобы мягко помочь себе вернуть больше спокойствия,
+                доверия к себе и ощущения жизни.
+              </p>
+            </div>
+            <ul class="access-list">
+              <li>мы не требуем «думать позитивно» и не обещаем магических быстрых изменений;</li>
+              <li>практики помогают шаг за шагом снижать внутреннее напряжение и замечать своё состояние;</li>
+              <li>здесь важна постепенность, бережность и возможность идти в реальном для себя темпе.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Форматы доступа и базовые преимущества открыты даже гостям -->
+      <section class="section section--compact" id="healing-formats">
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Как всё устроено</span>
+            <h2 class="section-title">Формат без перегруза и давления</h2>
+            <p class="section-intro">
+              Практики проходят онлайн и остаются в записи. Это формат для тех, кому нужен не резкий рывок,
+              а спокойная регулярность и возможность возвращаться к материалам в удобное время.
+            </p>
+          </div>
+
+          <div class="catalog-grid catalog-grid--compact">
+            <article class="card service-card service-card--compact">
+              <div class="service-card__top">
+                <h3 class="card__title">Формат</h3>
+                <p class="card__text">Онлайн-медитации в записи через «Канал целительных практик».</p>
+              </div>
+              <p class="access-meta">Доступ к практике можно открыть тогда, когда вам действительно удобно.</p>
+            </article>
+
+            <article class="card service-card service-card--compact">
+              <div class="service-card__top">
+                <h3 class="card__title">Ритм</h3>
+                <p class="card__text">2 новые практики в неделю для мягкой, но устойчивой регулярности.</p>
+              </div>
+              <p class="access-meta">Это формат не про перегруз, а про бережный темп, который можно встроить в жизнь.</p>
+            </article>
+
+            <article class="card service-card service-card--compact">
+              <div class="service-card__top">
+                <h3 class="card__title">Среда</h3>
+                <p class="card__text">Тёплая атмосфера поддержки без давления, сравнения и ожидания идеального результата.</p>
+              </div>
+              <p class="access-meta">Подходит и новичкам, и тем, кто уже практикует.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block" aria-labelledby="healing-path-title">
+            <div class="access-section__header">
+              <span class="eyebrow">Как устроен путь внутри курса</span>
+              <h2 id="healing-path-title" class="section-title">Сезонный цикл как последовательный процесс</h2>
+              <p class="section-intro">
+                Каждая практика — это не магическое решение, а маленький шаг в сторону более спокойного,
+                цельного и поддерживающего состояния.
+              </p>
+            </div>
+            <div class="duration-grid">
+              <div class="duration-card">
+                <strong>Март</strong>
+                <p>снизить внутренний конфликт и вернуть контакт с собой.</p>
+              </div>
+              <div class="duration-card">
+                <strong>Апрель</strong>
+                <p>почувствовать больше опоры, доверия и спокойствия.</p>
+              </div>
+              <div class="duration-card">
+                <strong>Май</strong>
+                <p>вернуть вкус к жизни, удовольствие, мягкость и живость.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <div class="process-grid">
+            <article class="content-block" aria-labelledby="healing-fit-title">
+              <h2 id="healing-fit-title" class="content-block__title">Кому подойдёт канал</h2>
+              <ul class="content-list">
+                <li>тем, кто живёт в постоянном напряжении;</li>
+                <li>тем, кто устал всё время быть собранной и сильной;</li>
+                <li>тем, кто хочет мягкой регулярной поддержки;</li>
+                <li>тем, кто не готов сейчас к глубокой индивидуальной работе;</li>
+                <li>тем, кто ищет безопасный первый шаг в практики и больше контакта с собой.</li>
+              </ul>
+            </article>
+
+            <article class="content-block" aria-labelledby="healing-no-fit-title">
+              <h2 id="healing-no-fit-title" class="content-block__title">Кому формат может не подойти</h2>
+              <ul class="content-list">
+                <li>тем, кто ждёт быстрых изменений без регулярного включения;</li>
+                <li>тем, кто ищет только рациональные техники без медитативного формата;</li>
+                <li>тем, кому не близка мягкая женская поддерживающая среда;</li>
+                <li>тем, кто ищет исключительно клиническую или терапевтическую помощь.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block" aria-labelledby="healing-results-title">
+            <div class="access-section__header">
+              <span class="eyebrow">Что можно получить в результате</span>
+              <h2 id="healing-results-title" class="section-title">Постепенные изменения без громких обещаний</h2>
+              <p class="section-intro">
+                Если возвращаться к практикам регулярно и идти в своём ритме, со временем можно заметить,
+                что внутренний способ жить меняется мягко, а не рывком.
+              </p>
+            </div>
+            <ul class="content-list">
+              <li>внутри становится чуть больше тишины и мягкости;</li>
+              <li>быстрее замечается момент, когда вы снова начинаете жить в напряжении;</li>
+              <li>появляется больше принятия себя и своих чувств;</li>
+              <li>становится легче расслаблять внутренний контроль;</li>
+              <li>возвращается контакт с телом, желаниями и ощущением «мне можно»;</li>
+              <li>в жизни появляется больше спокойствия, удовольствия и опоры на себя.</li>
+            </ul>
+            <p class="access-meta section-offset-top">
+              У каждого это происходит по-своему. Здесь важен не идеальный результат, а постепенное изменение внутреннего способа жить.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block" aria-labelledby="healing-space-title">
+            <div class="access-section__header">
+              <span class="eyebrow">Что есть внутри пространства</span>
+              <h2 id="healing-space-title" class="section-title">Не просто библиотека медитаций</h2>
+              <p class="section-intro">
+                Это регулярное поддерживающее пространство, где можно идти в своём темпе и не чувствовать,
+                что вы одна в своём процессе.
+              </p>
+            </div>
+            <ul class="content-list">
+              <li>новые практики каждую неделю;</li>
+              <li>тёплая атмосфера без давления и сравнения;</li>
+              <li>возможность проходить материалы в своём темпе;</li>
+              <li>ощущение, что рядом есть поддерживающее пространство, а не только набор файлов.</li>
+            </ul>
+            <p class="access-meta section-offset-top">
+              Если вам близка мягкая, женская, поддерживающая среда, здесь будет комфортно.
+              Если вам больше подходит строгий, нейтральный или сугубо рациональный формат,
+              этот продукт может быть не вашим — и это тоже нормально.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Универсальный блок границ формата -->
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block" aria-labelledby="healing-important-title">
+            <span class="eyebrow">Важно</span>
+            <h2 id="healing-important-title" class="content-block__title">Что это и чем этот формат не является</h2>
+            <p class="content-block__subtitle">
+              Мои продукты — это авторские трансформационные форматы для внутренней работы,
+              осознавания, практик и сопровождения. Они могут быть полезны, если вы хотите лучше понимать себя,
+              снижать внутреннее напряжение, менять повторяющиеся реакции и возвращать контакт с собой.
+            </p>
+            <p class="card__text">
+              При этом они не заменяют медицинскую, психиатрическую или клиническую психотерапевтическую помощь.
+              Если у вас острое состояние, панические атаки, тяжёлая тревога, депрессия или нужна медицинская поддержка,
+              лучше дополнительно обратиться к профильному специалисту.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Варианты оплаты доступны зарегистрированным пользователям -->
+      <section class="section" data-access-min="registered" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Стоимость участия</span>
+            <h2 class="section-title">Спокойный вход в формат без большого риска</h2>
+            <p class="section-intro">
+              После регистрации можно выбрать вариант участия. Первый вход помогает спокойно познакомиться с форматом,
+              не принимая сразу большое финансовое решение.
+            </p>
+          </div>
+
+          <div class="catalog-grid catalog-grid--compact">
+            <article
+              class="card service-card payment-option-card"
+              data-payment-option
+              data-plan-id="healing-first-entry"
+              data-plan-name="Первый вход"
+              data-plan-price="990 ₽"
+              data-plan-description="Специальная стоимость для первого знакомства с форматом"
+            >
+              <div class="service-card__top">
+                <h3 class="card__title">Первый вход</h3>
+                <p class="card__text">
+                  Специальная стоимость для тех, кто впервые входит в канал и хочет спокойно понять,
+                  насколько ему подходит этот формат.
+                </p>
+              </div>
+              <div class="price-block">
+                <span class="price-block__old">2000 ₽</span>
+                <span class="service-card__price">990 ₽</span>
+              </div>
+              <button class="button button--secondary" type="button" data-select-plan aria-pressed="false">
+                Выбрать формат
+              </button>
+            </article>
+
+            <article
+              class="card service-card payment-option-card"
+              data-payment-option
+              data-plan-id="healing-monthly"
+              data-plan-name="Ежемесячная оплата"
+              data-plan-price="2000 ₽"
+              data-plan-description="Один месяц доступа к каналу практик"
+            >
+              <div class="service-card__top">
+                <h3 class="card__title">Ежемесячная оплата</h3>
+                <p class="card__text">
+                  Один месяц регулярной практики для тех, кому хочется войти в ритм медитаций,
+                  поддержки и мягких изменений с любовью и заботой.
+                </p>
+              </div>
+              <div class="price-block">
+                <span class="service-card__price">2000 ₽</span>
+              </div>
+              <button class="button button--secondary" type="button" data-select-plan aria-pressed="false">
+                Выбрать формат
+              </button>
+            </article>
+
+            <article
+              class="card service-card payment-option-card"
+              data-payment-option
+              data-plan-id="healing-quarter"
+              data-plan-name="Пакет на 3 месяца"
+              data-plan-price="5150 ₽"
+              data-plan-description="Три месяца спокойной регулярной практики"
+            >
+              <div class="service-card__top">
+                <h3 class="card__title">Пакет на 3 месяца</h3>
+                <p class="card__text">
+                  Подходит тем, кто хочет не спешить, а спокойно закрепить более устойчивый ритм практики и внутренней поддержки.
+                </p>
+              </div>
+              <div class="price-block">
+                <span class="service-card__price">5150 ₽</span>
+              </div>
+              <button class="button button--secondary" type="button" data-select-plan aria-pressed="false">
+                Выбрать формат
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Содержание доступно зарегистрированным пользователям -->
+      <section class="section" data-access-min="registered" hidden>
+        <div class="container" id="healing-contents">
+          <div class="access-section__header">
+            <span class="eyebrow">Что есть внутри</span>
+            <h2 class="section-title">Сезонный курс и архив</h2>
+            <p class="section-intro">
+              После регистрации можно увидеть общую структуру канала и понять,
+              как устроен маршрут прохождения. Полные записи практик открываются после оплаты.
+            </p>
+          </div>
+
+          <article class="content-block">
+            <h2 class="content-block__title">Сезонный курс медитаций</h2>
+            <p class="content-block__subtitle">
+              Это актуальный цикл практик с ясной сезонной логикой: снижение внутреннего конфликта,
+              укрепление опоры и возвращение большего контакта с собой.
+            </p>
+            <div class="note">
+              Секция специально остаётся гибкой: её легко дополнять расписанием, описаниями практик,
+              новыми темами сезона и короткими рекомендациями по прохождению.
+            </div>
+          </article>
+
+          <div class="section-offset-top">
+            <span class="eyebrow">Архив</span>
+            <h2 class="section-title">Архив медитаций</h2>
+            <p class="section-intro">
+              Ниже архив оформлен как сетка карточек. Позже здесь можно заменить технические заглушки на реальные названия медитаций,
+              короткие описания состояний и маршруты прохождения.
+            </p>
+          </div>
+
+          <div class="grid grid--two section-offset-top">
+            <article class="card">
+              <h3 class="card__title">Подраздел 1</h3>
+              <p class="card__text">Практики на снижение внутреннего напряжения и возвращение к телу.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 2</h3>
+              <p class="card__text">Медитации на замедление, отдых и мягкое восстановление.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 3</h3>
+              <p class="card__text">Материалы на внутреннюю опору, доверие себе и спокойствие.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 4</h3>
+              <p class="card__text">Практики на отпускание контроля и снижение внутреннего напряжения.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 5</h3>
+              <p class="card__text">Материалы для контакта с чувствами, желаниями и телесными реакциями.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 6</h3>
+              <p class="card__text">Практики на внутреннюю мягкость, поддержку и принятие себя.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 7</h3>
+              <p class="card__text">Медитации для моментов перегруза, усталости и эмоционального шума.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 8</h3>
+              <p class="card__text">Практики на возвращение контакта с живостью, удовольствием и ритмом жизни.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 9</h3>
+              <p class="card__text">Короткие настройки для повседневной регулярности и мягкого включения.</p>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Подраздел 10</h3>
+              <p class="card__text">Поддерживающие практики, к которым можно возвращаться в удобное время.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Полные материалы доступны только после оплаты -->
+      <section class="section" id="healing-full-access" data-access-min="paid" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Полный доступ</span>
+            <h2 class="section-title">Практики и материалы участника</h2>
+            <p class="section-intro">
+              После оплаты открывается полный набор материалов: сезонные практики, архив записей,
+              дополнительные рекомендации и маршруты прохождения.
+            </p>
+          </div>
+
+          <div class="material-grid">
+            <article class="card material-card">
+              <h3 class="material-card__title">Сезонный трек практик</h3>
+              <p class="material-card__text">
+                Готовый маршрут на текущий сезон с последовательностью медитаций, пояснениями и мягким темпом прохождения.
+              </p>
+              <p class="material-card__meta">Формат: серия аудио и текстовые рекомендации.</p>
+            </article>
+
+            <article class="card material-card">
+              <h3 class="material-card__title">Архив аудио-медитаций</h3>
+              <p class="material-card__text">
+                Доступ к полным записям практик для разных состояний: замедление, восстановление, опора, отпускание и мягкое возвращение к себе.
+              </p>
+              <p class="material-card__meta">Формат: аудиоархив по темам и состояниям.</p>
+            </article>
+
+            <article class="card material-card">
+              <h3 class="material-card__title">Короткие практики на каждый день</h3>
+              <p class="material-card__text">
+                Компактные настройки, к которым можно возвращаться в течение дня, если нужен короткий ритуал присутствия и стабилизации.
+              </p>
+              <p class="material-card__meta">Формат: набор коротких практик и карточек-навигаций.</p>
+            </article>
+
+            <article class="card material-card">
+              <h3 class="material-card__title">Сопроводительные материалы</h3>
+              <p class="material-card__text">
+                Подсказки по ритму прохождения, описания состояний, рекомендации по сочетанию практик и заметки для самостоятельной интеграции.
+              </p>
+              <p class="material-card__meta">Формат: текстовые инструкции и маршрутные листы.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>© Юлия Перевозникова</p>
+          <p>Страница канала практик с бережным описанием формата, вариантами участия и архивом медитаций.</p>
+        </div>
+        <div>
+          <p><a href="index.html">На главную</a></p>
+          <p><a href="training.html">К тренингу</a></p>
+          <p><a href="therapy.html">К терапии</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Общий переключатель темы. -->
+    <button
+      class="theme-toggle"
+      type="button"
+      data-theme-toggle
+      aria-label="Переключить тему"
+      aria-pressed="false"
+    >
+      <span class="theme-toggle__label" data-theme-toggle-label>Тёмная</span>
+      <span class="theme-toggle__hint" data-theme-toggle-hint>тема</span>
+    </button>
+    <!-- Общая логика разграничения доступа и демонстрационной оплаты. -->
+    <script src="js/access.js"></script>
+  </body>
+</html>

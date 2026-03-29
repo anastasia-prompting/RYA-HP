@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Индивидуальная Энергетическая Трансформация</title>
+    <meta
+      name="description"
+      content="Страница индивидуальной работы Юлии Перевозниковой с понятным описанием формата, тарифами сопровождения и логикой доступа по статусу пользователя."
+    />
+    <!-- Общая логика темы вынесена в отдельный файл. -->
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Ссылка быстрого перехода к основному содержанию -->
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <!-- Шапка страницы -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-brand">
+          <span class="site-brand__title">Юлия Перевозникова</span>
+          <span class="site-brand__subtitle">Индивидуальная Энергетическая Трансформация</span>
+        </div>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="training.html">Тренинг</a></li>
+            <li><a href="healing-channel.html">Канал практик</a></li>
+            <li><a class="is-active" href="therapy.html" aria-current="page">Терапия</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main
+      id="main-content"
+      class="page-main"
+      data-product-access-root
+      data-product-id="therapy"
+      data-product-name="Индивидуальная Энергетическая Трансформация"
+      data-badge-guest="Доступ: обзор страницы"
+      data-badge-registered="Доступ: формат и тарифы"
+      data-badge-paid="Доступ: открыт полностью"
+      data-status-guest="Сейчас вы видите обзор формата, кому он подходит и ориентиры по тарифам. Для выбора и демонстрационной оплаты потребуется регистрация."
+      data-status-registered="Вы зарегистрированы. Сейчас доступны подробная структура работы, тарифы и демонстрационная оплата доступа к материалам старта."
+      data-status-paid="Доступ открыт в демонстрационном режиме. Вам доступны обзор формата, тарифы и полный блок материалов для старта."
+      data-panel-status-guest="Можно спокойно познакомиться с форматом и понять, подходит ли он вам. Для оплаты и полного доступа потребуется регистрация."
+      data-panel-status-registered="Если формат вам откликается, можно выбрать пакет и перейти к оплате."
+      data-panel-status-paid="Доступ открыт. Можно переходить к полным материалам и следующему шагу ниже."
+    >
+      <section class="hero">
+        <div class="container">
+          <div class="hero__box">
+            <span class="eyebrow">Личная работа 1:1</span>
+            <h1 class="hero__title">Индивидуальная трансформационная работа</h1>
+            <p class="hero__text">
+              Пространство, где можно наконец разобраться с тем, что удерживает,
+              и начать двигаться по-другому. Формат подойдёт тем, кто устал жить в
+              постоянном внутреннем напряжении, справляться в одиночку и снова
+              возвращаться в одни и те же реакции.
+            </p>
+            <ul class="access-list hero-feature-list">
+              <li>много думаете, но всё равно откладываете важные шаги;</li>
+              <li>замечаете повторяющиеся сценарии в отношениях, деньгах или самореализации;</li>
+              <li>живёте через усилие и хотите больше ясности, опоры и ощущения «я на своей стороне»;</li>
+              <li>ищете бережную индивидуальную работу без давления и без попытки вас «чинить».</li>
+            </ul>
+            <p class="hero__text hero__text--compact">
+              Формат: индивидуальная работа 1:1 с сопровождением в течение месяца.
+              Фокус: мышление, эмоциональные реакции, внутренние паттерны,
+              самоощущение, проявленность и личная опора.
+            </p>
+            <div class="hero__actions">
+              <a class="button" href="#therapy-access">Проверить доступ</a>
+              <a class="button button--secondary" href="#therapy-preview">Посмотреть пакеты</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Общая панель статуса доступа и демонстрационной оплаты -->
+      <section class="section section--compact" id="therapy-access">
+        <div class="container">
+          <article class="content-block access-panel" aria-labelledby="therapy-access-title">
+            <div class="access-panel__header">
+              <div class="access-panel__copy">
+                <span class="eyebrow">Доступ к модулю</span>
+                <h2 id="therapy-access-title" class="access-panel__title">Статус вашего доступа к индивидуальной работе</h2>
+                <p class="access-panel__text" data-access-status-text>
+                  Мы определим, что можно открыть прямо сейчас: обзор формата,
+                  тарифы и полный доступ к материалам старта.
+                </p>
+              </div>
+              <div class="access-badge" data-access-status-badge>Проверяем статус</div>
+            </div>
+
+            <div class="access-actions">
+              <a class="button" href="index.html#registration" data-access-action="register">Зарегистрироваться</a>
+              <a class="button button--secondary" href="index.html#personal-cabinet" data-access-action="cabinet" hidden>Открыть личный кабинет</a>
+              <button class="button" type="button" data-payment-button hidden>Оплатить доступ</button>
+            </div>
+
+            <p class="form-status" data-payment-status aria-live="polite"></p>
+
+            <div class="access-note">
+              <strong>Демо-режим оплаты:</strong> сейчас кнопка оплаты только меняет статус продукта на «оплачено» через <code>localStorage</code>.
+              Позже на этом месте можно подключить backend и реальный checkout без перестройки интерфейса.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Поясняющий блок о формате доступен всем -->
+      <section class="section">
+        <div class="container">
+          <article class="content-block access-section" aria-labelledby="therapy-format-title">
+            <div class="access-section__header">
+              <span class="eyebrow">Что это за формат</span>
+              <h2 id="therapy-format-title" class="section-title">Авторская индивидуальная работа с ясными рамками</h2>
+              <p class="section-intro">
+                Это не набор абстрактных обещаний, а формат, где сочетаются коучинговый
+                подход, внимательная работа с внутренними паттернами и состоянием,
+                практики на осознавание и сопровождение между встречами.
+              </p>
+            </div>
+            <ul class="access-list">
+              <li>коучинговый подход и разбор того, что повторяется в ваших реакциях и решениях;</li>
+              <li>практики на осознавание, внутреннюю опору и более устойчивый способ быть с собой;</li>
+              <li>сопровождение между сессиями, чтобы не потеряться в процессе и замечать изменения в реальной жизни.</li>
+            </ul>
+            <div class="note">
+              Важно: это не медицинская услуга и не замена психотерапии или психиатрической помощи.
+              Если у вас острое состояние, выраженная тревога, панические атаки или нужна клиническая поддержка,
+              лучше дополнительно обратиться к профильному специалисту.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Честная фильтрация повышает доверие и помогает не обещать лишнего -->
+      <section class="section section--compact">
+        <div class="container">
+          <div class="process-grid">
+            <article class="content-block" aria-labelledby="therapy-fit-title">
+              <h2 id="therapy-fit-title" class="content-block__title">Кому подойдёт эта работа</h2>
+              <ul class="content-list">
+                <li>тем, кто устал жить в постоянном внутреннем напряжении;</li>
+                <li>тем, кто чувствует стоп перед важными шагами и решениями;</li>
+                <li>тем, кто замечает повторяющиеся сценарии в отношениях, деньгах или самореализации;</li>
+                <li>тем, кто хочет перестать жить «через усилие» и готов к бережной, но глубокой внутренней работе.</li>
+              </ul>
+            </article>
+
+            <article class="content-block" aria-labelledby="therapy-no-fit-title">
+              <h2 id="therapy-no-fit-title" class="content-block__title">Кому формат может не подойти</h2>
+              <ul class="content-list">
+                <li>тем, кто ищет строго клиническую или медицинскую помощь;</li>
+                <li>тем, кому нужен только быстрый совет без личного процесса;</li>
+                <li>тем, кто ждёт мгновенного результата без собственного участия;</li>
+                <li>тем, кому не откликается мягкий трансформационный подход.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Гостю открыта ясная структура формата, но полный доступ к материалам остаётся ниже по статусам -->
+      <section class="section section--compact">
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Как проходит работа</span>
+            <h2 class="section-title">Понятный маршрут без «волшебной таблетки»</h2>
+            <p class="section-intro">
+              Работа строится как последовательный процесс: сначала мы уточняем запрос и видим,
+              что именно удерживает, а затем в течение месяца удерживаем ритм изменений через сопровождение.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <article class="content-block process-card">
+              <h3 class="content-block__title">1. Первая встреча · 50 минут</h3>
+              <ul class="content-list">
+                <li>знакомимся и уточняем ваш запрос;</li>
+                <li>смотрим, что сейчас происходит в вашей жизни и состоянии;</li>
+                <li>выделяем повторяющиеся реакции, внутренние конфликты и точки напряжения;</li>
+                <li>определяем направление работы и то, на что будем опираться дальше.</li>
+              </ul>
+              <p class="access-meta section-offset-top">
+                Уже на первой встрече многие чувствуют больше ясности и внутреннего облегчения.
+              </p>
+            </article>
+
+            <article class="content-block process-card">
+              <h3 class="content-block__title">2. Сопровождение в течение месяца</h3>
+              <ul class="content-list">
+                <li>остаёмся на связи в сообщениях;</li>
+                <li>отслеживаем состояние, реакции, инсайты и изменения;</li>
+                <li>я даю практики, наблюдения и направления под ваш запрос;</li>
+                <li>поддерживаю вас в процессе, чтобы движение было устойчивым и реальным.</li>
+              </ul>
+              <p class="access-meta section-offset-top">
+                Это не история про быстрый совет на один день, а формат, где важны ваше участие и постепенное закрепление новых реакций.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block section-offset-top">
+            <h2 class="content-block__title">Что может меняться в процессе</h2>
+            <ul class="content-list">
+              <li>становится меньше внутреннего шума и напряжения;</li>
+              <li>появляется больше ясности в мыслях и решениях;</li>
+              <li>уходит часть страха перед действиями;</li>
+              <li>становится легче опираться на себя, а не только на внешнюю оценку;</li>
+              <li>повторяющиеся сценарии становятся заметнее, а значит, с ними уже можно работать;</li>
+              <li>появляется больше контакта с собой, телом, чувствами и своими настоящими желаниями.</li>
+            </ul>
+            <p class="access-meta section-offset-top">
+              Изменения у всех происходят по-разному. Часто они начинаются с ощущения:
+              «я наконец-то лучше понимаю, что со мной происходит, и вижу, куда двигаться дальше».
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block section-offset-top">
+            <h2 class="content-block__title">Почему многим подходит формат от 3 месяцев</h2>
+            <p class="content-block__subtitle">
+              Один месяц — это хороший старт: появляется больше ясности и видно первые внутренние сдвиги.
+              Три месяца обычно помогают не только что-то понять, но и закрепить новые реакции, решения и опору на себя.
+            </p>
+            <div class="duration-grid">
+              <div class="duration-card">
+                <strong>1 месяц</strong>
+                <p>ясность и старт изменений.</p>
+              </div>
+              <div class="duration-card">
+                <strong>2 месяц</strong>
+                <p>устойчивость и укрепление внутренней опоры.</p>
+              </div>
+              <div class="duration-card">
+                <strong>3 месяц</strong>
+                <p>больше свободы, проявленности и движения в жизни.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Универсальный блок границ формата -->
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block" aria-labelledby="therapy-important-title">
+            <span class="eyebrow">Важно</span>
+            <h2 id="therapy-important-title" class="content-block__title">Что это и чем этот формат не является</h2>
+            <p class="content-block__subtitle">
+              Это авторский трансформационный формат для внутренней работы, осознавания, практик и сопровождения.
+              Он может быть полезен, если вы хотите лучше понимать себя, снижать внутреннее напряжение,
+              менять повторяющиеся реакции и возвращать контакт с собой.
+            </p>
+            <p class="card__text">
+              При этом формат не заменяет медицинскую, психиатрическую или клиническую психотерапевтическую помощь.
+              Если у вас острое состояние, панические атаки, тяжёлая тревога, депрессия или нужна медицинская поддержка,
+              лучше дополнительно обратиться к профильному специалисту.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Ознакомительные карточки тарифов доступны даже гостю -->
+      <section class="section" id="therapy-preview">
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Ознакомительный каталог</span>
+            <h2 class="section-title">Форматы работы</h2>
+            <p class="section-intro">
+              Здесь можно заранее увидеть пакеты и спокойно понять, какой уровень поддержки вам ближе.
+              Подробный состав и следующий шаг к оплате откроются после регистрации.
+            </p>
+          </div>
+
+          <div class="catalog-grid">
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Базовый</h3>
+                <p class="service-card__price">45 000 ₽</p>
+              </div>
+              <p class="card__text">Подойдёт, если вы хотите начать индивидуальную работу и получить ясность по своему запросу.</p>
+              <p class="access-meta">Уровень включённости: спокойный старт с одной личной встречей и сопровождением в течение месяца.</p>
+              <a class="button button--secondary" href="index.html#registration">Оставить заявку</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Оптимальный</h3>
+                <p class="service-card__price">50 000 ₽</p>
+              </div>
+              <p class="card__text">Подойдёт, если вам важно не только начать, но и глубже разобрать повторяющиеся мысли и реакции.</p>
+              <p class="access-meta">Уровень включённости: две личные встречи и более плотная опора в течение месяца.</p>
+              <a class="button button--secondary" href="index.html#registration">Оставить заявку</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Трансформационный</h3>
+                <p class="service-card__price">55 000 ₽</p>
+              </div>
+              <p class="card__text">Подойдёт, если вы хотите более плотную и глубокую работу в течение месяца.</p>
+              <p class="access-meta">Уровень включённости: четыре личные встречи и более глубокая работа с внутренними паттернами и состоянием.</p>
+              <a class="button button--secondary" href="index.html#registration">Оставить заявку</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Детский</h3>
+                <p class="service-card__price">35 000 ₽</p>
+              </div>
+              <p class="card__text">Подойдёт, если ваш запрос связан с состоянием ребёнка и семейной динамикой.</p>
+              <p class="access-meta">Уровень включённости: сопровождение в течение месяца и опора на ваш родительский процесс.</p>
+              <a class="button button--secondary" href="index.html#registration">Оставить заявку</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">VIP</h3>
+                <p class="service-card__price">80 000 ₽</p>
+              </div>
+              <p class="card__text">Подойдёт, если вам нужен более высокий уровень включённости и персонального сопровождения.</p>
+              <p class="access-meta">Уровень включённости: плотный личный контакт, аудиоразборы и ежедневное сопровождение.</p>
+              <a class="button button--secondary" href="index.html#registration">Оставить заявку</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Бизнес</h3>
+                <p class="service-card__price">от 105 000 ₽</p>
+              </div>
+              <p class="card__text">Подойдёт предпринимателям и экспертам, которым нужна индивидуальная работа под задачи проявленности, решений и роста.</p>
+              <p class="access-meta">Уровень включённости: формат и объём работы обсуждаются индивидуально под ваш запрос.</p>
+              <a class="button button--secondary" href="index.html#registration">Оставить заявку</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Детальный каталог для зарегистрированных -->
+      <section class="section" data-access-min="registered" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Тарифы</span>
+            <h2 class="section-title">Подробные форматы работы на месяц</h2>
+            <p class="section-intro">
+              После регистрации открывается расширенный состав тарифов. Так проще сравнить уровень поддержки,
+              а потом решить, какой формат вам действительно подходит.
+            </p>
+          </div>
+
+          <div class="catalog-grid">
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Базовый</h3>
+                <p class="service-card__price">45 000 ₽</p>
+                <p class="card__text">Подойдёт, если вы хотите начать индивидуальную работу и получить ясность по своему запросу.</p>
+                <p class="access-meta">Уровень включённости: спокойный старт и ежемесячное сопровождение.</p>
+              </div>
+              <ul class="service-card__list">
+                <li>1 личная встреча 50 минут;</li>
+                <li>сопровождение в течение месяца;</li>
+                <li>обратная связь в сообщениях;</li>
+                <li>практики и направления по вашему запросу.</li>
+              </ul>
+              <a class="button" href="#therapy-access">Выбрать пакет</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Оптимальный</h3>
+                <p class="service-card__price">50 000 ₽</p>
+                <p class="card__text">Подойдёт, если вам важно не только начать, но и глубже проработать повторяющиеся мысли и реакции.</p>
+                <p class="access-meta">Уровень включённости: две личные встречи и более плотная опора в течение месяца.</p>
+              </div>
+              <ul class="service-card__list">
+                <li>2 личные встречи;</li>
+                <li>сопровождение в течение месяца;</li>
+                <li>обратная связь в сообщениях;</li>
+                <li>практики и поддержка по ходу процесса.</li>
+              </ul>
+              <a class="button" href="#therapy-access">Выбрать пакет</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Трансформационный</h3>
+                <p class="service-card__price">55 000 ₽</p>
+                <p class="card__text">Подойдёт, если вы хотите более плотную и глубокую работу в течение месяца.</p>
+                <p class="access-meta">Уровень включённости: высокий, с четырьмя личными встречами и глубоким сопровождением.</p>
+              </div>
+              <ul class="service-card__list">
+                <li>4 личные встречи;</li>
+                <li>сопровождение в течение месяца;</li>
+                <li>обратная связь и поддержка;</li>
+                <li>более глубокая работа с внутренними паттернами и состоянием.</li>
+              </ul>
+              <a class="button" href="#therapy-access">Выбрать пакет</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Детский</h3>
+                <p class="service-card__price">35 000 ₽</p>
+                <p class="card__text">Подойдёт, если ваш запрос связан с состоянием ребёнка и семейной динамикой.</p>
+                <p class="access-meta">Уровень включённости: сопровождение в течение месяца с фокусом на семейный процесс.</p>
+              </div>
+              <ul class="service-card__list">
+                <li>сопровождение в течение месяца;</li>
+                <li>работа с вашим состоянием как родителя;</li>
+                <li>поддержка и обратная связь по взаимодействию с ребёнком;</li>
+                <li>дополнительная индивидуальная сессия 7 500 ₽ по желанию.</li>
+              </ul>
+              <a class="button" href="#therapy-access">Выбрать пакет</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">VIP</h3>
+                <p class="service-card__price">80 000 ₽</p>
+                <p class="card__text">Подойдёт, если вам нужен более высокий уровень включённости и персонального сопровождения.</p>
+                <p class="access-meta">Уровень включённости: максимальный, с ежедневным касанием и личными аудиоразборами.</p>
+              </div>
+              <ul class="service-card__list">
+                <li>4 личные встречи;</li>
+                <li>ежедневное сопровождение;</li>
+                <li>личные аудиосообщения с разборами и поддержкой;</li>
+                <li>более плотная работа под ваш запрос.</li>
+              </ul>
+              <a class="button" href="#therapy-access">Выбрать пакет</a>
+            </article>
+
+            <article class="card service-card">
+              <div class="service-card__top">
+                <h3 class="card__title">Бизнес</h3>
+                <p class="service-card__price">от 105 000 ₽</p>
+                <p class="card__text">Подойдёт предпринимателям и экспертам, которым нужна глубокая работа под задачи самореализации, решений и проявленности.</p>
+                <p class="access-meta">Уровень включённости: индивидуально согласуется под масштаб запроса.</p>
+              </div>
+              <ul class="service-card__list">
+                <li>индивидуальные встречи и сопровождение под ваш запрос;</li>
+                <li>поддержка по ключевым решениям и состояниям;</li>
+                <li>персональные разборы и ориентиры между встречами;</li>
+                <li>формат и объём работы обсуждаются индивидуально.</li>
+              </ul>
+              <a class="button" href="#therapy-access">Выбрать пакет</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--compact" data-access-min="registered" hidden>
+        <div class="container">
+          <article class="content-block" aria-labelledby="therapy-payment-info-title">
+            <span class="eyebrow">Важно знать до оплаты</span>
+            <h2 id="therapy-payment-info-title" class="content-block__title">Спокойные рамки перед стартом</h2>
+            <ul class="content-list">
+              <li>до старта можно задать все вопросы о формате;</li>
+              <li>мы заранее обсуждаем, подходит ли вам этот тип работы;</li>
+              <li>если вам нужна клиническая или медицинская помощь, об этом честно говорится заранее;</li>
+              <li>условия оплаты, переноса и возврата лучше уточнить до старта в переписке, чтобы у нас было единое понимание рамок.</li>
+            </ul>
+            <p class="access-meta section-offset-top">
+              Моя задача — не уговорить вас, а помочь понять, подходит ли вам этот формат на самом деле.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--compact" data-access-min="registered" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Разовые сессии и практики</span>
+            <h2 class="section-title">Отдельные форматы</h2>
+            <p class="section-intro">
+              Эти позиции можно использовать как самостоятельные форматы или дополнение к пакетам сопровождения.
+            </p>
+          </div>
+
+          <div class="catalog-grid catalog-grid--compact">
+            <article class="card service-card service-card--compact">
+              <h3 class="card__title">Дополнительная индивидуальная сессия к пакетам «Базовый» и «Детский»</h3>
+              <p class="card__text">Подходит как дополнительное углубление, если в процессе нужно отдельное личное касание.</p>
+              <p class="service-card__price">7 500 ₽</p>
+            </article>
+            <article class="card service-card service-card--compact">
+              <h3 class="card__title">Индивидуальная трансляция по запросу · 30 минут</h3>
+              <p class="card__text">Короткий формат для отдельного состояния, вопроса или разворота в процессе.</p>
+              <p class="service-card__price">5 000 ₽</p>
+            </article>
+            <article class="card service-card service-card--compact">
+              <h3 class="card__title">Индивидуальная медитация по запросу · 30 минут</h3>
+              <p class="card__text">Персональная практика под ваш запрос и текущее состояние.</p>
+              <p class="service-card__price">5 000 ₽</p>
+            </article>
+            <article class="card service-card service-card--compact">
+              <h3 class="card__title">1 час оффлайн / коуч-сессия</h3>
+              <p class="card__text">Разовый формат для тех, кому нужна одна очная или коучинговая встреча.</p>
+              <p class="service-card__price">10 000 ₽</p>
+            </article>
+            <article class="card service-card service-card--compact">
+              <h3 class="card__title">1 час оффлайн / коуч-сессия + 30 минут дополнительной практики</h3>
+              <p class="card__text">Более объёмный формат, если важно не только обсудить, но и закрепить состояние через практику.</p>
+              <p class="service-card__price">13 000 ₽</p>
+            </article>
+            <article class="card service-card service-card--compact">
+              <h3 class="card__title">Практика «Перевоплощение» / индивидуальная энергетическая работа</h3>
+              <p class="card__text">Отдельный авторский формат для тех, кому подходит более глубокая индивидуальная практика.</p>
+              <p class="service-card__price">18 000 ₽</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Полный доступ для оплатившего пользователя -->
+      <section class="section" data-access-min="paid" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Полный доступ</span>
+            <h2 class="section-title">Что открывается после оплаты</h2>
+            <p class="section-intro">
+              В полном доступе собраны спокойные ориентиры для старта: что подготовить,
+              как выстраивается контакт и на чём держится ритм сопровождения.
+            </p>
+          </div>
+
+          <div class="material-grid">
+            <article class="content-block material-card">
+              <h3 class="material-card__title">Старт после оплаты</h3>
+              <p class="material-card__text">
+                После подтверждения доступа можно согласовать первую встречу, коротко зафиксировать запрос
+                и подготовить описание своей текущей точки А.
+              </p>
+              <p class="material-card__meta">Следующий шаг: переход в личный кабинет и уточнение контактов.</p>
+            </article>
+
+            <article class="content-block material-card">
+              <h3 class="material-card__title">Ритм сопровождения</h3>
+              <p class="material-card__text">
+                Основной процесс строится на сочетании встреч, сообщений, практик и поддерживающих ориентиров
+                по ходу месяца в зависимости от вашего запроса.
+              </p>
+              <p class="material-card__meta">Подходит для постепенной, но устойчивой внутренней перестройки.</p>
+            </article>
+
+            <article class="content-block material-card">
+              <h3 class="material-card__title">Подготовка к первой встрече</h3>
+              <p class="material-card__text">
+                Полезно заранее выписать свой текущий запрос, повторяющиеся состояния, точки напряжения
+                и то, что вы хотели бы начать менять в ближайший период.
+              </p>
+              <p class="material-card__meta">Это помогает быстрее выйти на суть и точнее настроить работу.</p>
+            </article>
+
+            <article class="content-block material-card">
+              <h3 class="material-card__title">Сценарий движения на 1–3 месяца</h3>
+              <p class="material-card__text">
+                На первом месяце обычно появляется больше ясности и стартуют изменения,
+                на втором укрепляется опора, а на третьем становится легче закреплять новые реакции и решения.
+              </p>
+              <p class="material-card__meta">Дальше длительность можно обсуждать индивидуально, исходя из глубины запроса.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>© Юлия Перевозникова</p>
+          <p>Страница личной работы с пакетами, практиками и логикой доступа.</p>
+        </div>
+        <div>
+          <p><a href="index.html">На главную</a></p>
+          <p><a href="training.html">К тренингу</a></p>
+          <p><a href="healing-channel.html">К каналу практик</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Общий переключатель темы. -->
+    <button
+      class="theme-toggle"
+      type="button"
+      data-theme-toggle
+      aria-label="Переключить тему"
+      aria-pressed="false"
+    >
+      <span class="theme-toggle__label" data-theme-toggle-label>Тёмная</span>
+      <span class="theme-toggle__hint" data-theme-toggle-hint>тема</span>
+    </button>
+
+    <!-- Общая логика разграничения доступа и демонстрационной оплаты. -->
+    <script src="js/access.js"></script>
+  </body>
+</html>

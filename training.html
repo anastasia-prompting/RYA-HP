@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тренинг «Вырасти Себя Снова»</title>
+    <meta
+      name="description"
+      content="Страница тренинга «Вырасти Себя Снова» с разграничением доступа к описанию, структуре и полным материалам."
+    />
+    <!-- Общая логика темы вынесена в отдельный файл. -->
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Ссылка быстрого перехода к основному содержанию -->
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <!-- Шапка страницы -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-brand">
+          <span class="site-brand__title">Юлия Перевозникова</span>
+          <span class="site-brand__subtitle">Тренинг «Вырасти Себя Снова»</span>
+        </div>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a class="is-active" href="training.html" aria-current="page">Тренинг</a></li>
+            <li><a href="healing-channel.html">Канал практик</a></li>
+            <li><a href="therapy.html">Терапия</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main id="main-content" class="page-main" data-product-access-root data-product-id="training" data-product-name="Тренинг «Вырасти Себя Снова»">
+      <section class="hero">
+        <div class="container">
+          <div class="hero__box">
+            <span class="eyebrow">Страница продукта</span>
+            <h1 class="hero__title">Тренинг «Вырасти Себя Снова»</h1>
+            <p class="hero__text">
+              Программа для глубокой внутренней работы с жизненным сценарием, эго-состояниями, родительскими программами,
+              стадиями развития и практиками перепроживания. На этой странице доступ к материалам зависит от статуса участника.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Общая панель статуса доступа и демонстрационной оплаты -->
+      <section class="section section--compact">
+        <div class="container">
+          <article class="content-block access-panel" aria-labelledby="training-access-title">
+            <div class="access-panel__header">
+              <div class="access-panel__copy">
+                <span class="eyebrow">Доступ к материалам</span>
+                <h2 id="training-access-title" class="access-panel__title">Статус вашего доступа к тренингу</h2>
+                <p class="access-panel__text" data-access-status-text>
+                  Мы определим, какие блоки доступны сейчас: краткое описание, структура программы или полный комплект материалов.
+                </p>
+              </div>
+              <div class="access-badge" data-access-status-badge>Проверяем статус</div>
+            </div>
+
+            <div class="access-actions">
+              <a class="button" href="index.html#registration" data-access-action="register">Зарегистрироваться</a>
+              <a class="button button--secondary" href="index.html#personal-cabinet" data-access-action="cabinet" hidden>Открыть личный кабинет</a>
+              <button class="button" type="button" data-payment-button hidden>Оплатить доступ</button>
+            </div>
+
+            <p class="form-status" data-payment-status aria-live="polite"></p>
+
+            <div class="access-note">
+              <strong>Демо-режим оплаты:</strong> пока backend и платёжный шлюз не подключены, кнопка оплаты переводит статус продукта
+              в состояние «оплачено» через <code>localStorage</code>. Позже этот сценарий можно заменить на реальный платёжный flow. 
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Краткое описание доступно всем посетителям -->
+      <section class="section">
+        <div class="container">
+          <article class="content-block access-section" aria-labelledby="training-short-title">
+            <div class="access-section__header">
+              <span class="eyebrow">Краткое описание</span>
+              <h2 id="training-short-title" class="section-title">Что входит в продукт</h2>
+              <p class="section-intro">
+                Тренинг помогает увидеть, как складывается жизненный сценарий, откуда берутся устойчивые внутренние роли,
+                как родительские предписания и запреты влияют на тело, чувства и выбор, и как постепенно вырастить новую форму опоры.
+              </p>
+            </div>
+            <ul class="access-list">
+              <li>13 тематических разделов, выстроенных в последовательную траекторию прохождения.</li>
+              <li>Сочетание теории, практики, рефлексии и домашних заданий.</li>
+              <li>Переход от понимания сценария к его переписыванию через осознанную внутреннюю работу.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Структура тренинга доступна зарегистрированным пользователям -->
+      <section class="section" data-access-min="registered" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Содержание</span>
+            <h2 class="section-title">Структура тренинга</h2>
+            <p class="section-intro">
+              После регистрации доступно подробное содержание программы. Полный комплект материалов, практик и рабочих файлов
+              откроется после оплаты доступа.
+            </p>
+          </div>
+
+          <article class="content-block" id="section-1">
+            <h2 class="content-block__title">Раздел 1</h2>
+            <p class="content-block__subtitle">Введение в жизненный сценарий и его внутреннюю логику</p>
+            <ul class="content-list">
+              <li>Природа и происхождение сценария жизни. Телесные паттерны поведения: тело как будто само кричит, замирает, бьет, плачет, и вы не в силах это остановить</li>
+              <li>Искажение реальности с целью «оправдания» сценария</li>
+              <li>Сценарий победителя, сценарий проигравшего и средний сценарий. Ментальные конструкции, которыми мы делаем себе больно</li>
+              <li>Домашние задания</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-2">
+            <h2 class="content-block__title">Раздел 2</h2>
+            <p class="content-block__subtitle">Эго-состояния и исцеляющий диалог</p>
+            <ul class="content-list">
+              <li>Образ родителей. Взрослый. Родитель. Ребёнок. Эго-состояния</li>
+              <li>Поглаживания — что это такое? Исцеляющий диалог, который не просто слова, а реальный переворот жизни</li>
+              <li>Виды поглаживаний</li>
+              <li>Экономия поглаживаний</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-3">
+            <h2 class="content-block__title">Раздел 3</h2>
+            <p class="content-block__subtitle">Родовые влияния, чувства и телесные последствия</p>
+            <ul class="content-list">
+              <li>Образ родителей и их влияние на нас. Генетика рода и Эгрегор рода: что мы наследуем</li>
+              <li>Эмоции, чувства, энергетика и как все это отразилось на вашем теле, здоровье и качестве жизни. Рэкет. Рэкетные чувства. Чувства рэкета и аутентичные чувства</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-4">
+            <h2 class="content-block__title">Раздел 4. Жизненные позиции и их формирование</h2>
+            <ul class="content-list">
+              <li>Жизненные позиции OK, НЕ OK. Происхождение жизненных позиций. Та самая форма бытия, из которой мы живем и даже говорим «я такая», «это не изменить», «с этим ничего не поделать»</li>
+              <li>Как формируется жизненная позиция</li>
+              <li>Основная эмоциональная установка или жизненная позиция, создающая форму бытия Жертвы, Тирана, Спасателя</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-5">
+            <h2 class="content-block__title">Раздел 5. Родительские программы, предписания и запреты</h2>
+            <ul class="content-list">
+              <li>Родительские программы. Ментальные программы, из которых мы живем. Действия запретов по стадиям детского развития</li>
+              <li>Предписания, которые вам дали в детстве и по которым вы можете выжить, но не жить в изобилии. Взаимосвязь предписаний и запретов</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-6">
+            <h2 class="content-block__title">Раздел 6. Вырасти снова в Стадии Существования 0-6 месяцев</h2>
+            <ul class="content-list">
+              <li>Запреты — формирование ментальных программ</li>
+              <li>Задачи ребенка, типичное поведение на стадии существования</li>
+              <li>Полезное и вредное поведение родителей</li>
+              <li>Поддерживающие послания</li>
+              <li>Запрещающие послания</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-7">
+            <h2 class="content-block__title">Раздел 7. Вырасти снова в Стадии Действия 6-18 месяцев</h2>
+            <ul class="content-list">
+              <li>Запреты — формирование ментальных программ</li>
+              <li>Задачи ребенка, типичное поведение на стадии действия</li>
+              <li>Полезное и вредное поведение родителей</li>
+              <li>Поддерживающие послания</li>
+              <li>Запрещающие послания</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-8">
+            <h2 class="content-block__title">Раздел 8. Вырасти снова в Стадии Мышления 18 месяцев - 3 года</h2>
+            <ul class="content-list">
+              <li>Запреты — формирование ментальных программ</li>
+              <li>Задачи ребенка, типичное поведение на стадии мышления</li>
+              <li>Полезное и вредное поведение родителей</li>
+              <li>Поддерживающие послания</li>
+              <li>Запрещающие послания</li>
+              <li>Домашнее задание: упражнения</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-9">
+            <h2 class="content-block__title">Раздел 9. Вырасти снова в Стадии Идентичности и Силы 3-6 лет</h2>
+            <ul class="content-list">
+              <li>Запреты — формирование ментальных программ</li>
+              <li>Задачи ребенка, типичное поведение на стадии идентичности</li>
+              <li>Полезное и вредное поведение родителей</li>
+              <li>Поддерживающие послания</li>
+              <li>Запрещающие послания</li>
+              <li>Домашнее задание: упражнения</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-10">
+            <h2 class="content-block__title">Раздел 10. Вырасти снова в Стадии Компетентности и Структуры 6-12 лет</h2>
+            <ul class="content-list">
+              <li>Запреты — формирование ментальных программ</li>
+              <li>Задачи ребенка, типичное поведение на стадии структуры</li>
+              <li>Полезное и вредное поведение родителей</li>
+              <li>Поддерживающие послания</li>
+              <li>Запрещающие послания</li>
+              <li>Домашнее задание: 3 упражнения</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-11">
+            <h2 class="content-block__title">Раздел 11. Вырасти снова в Стадия Регенерации и Отделения 12-19 лет</h2>
+            <ul class="content-list">
+              <li>Запреты — формирование ментальных программ</li>
+              <li>Задачи ребенка, типичное поведение на стадии отделения</li>
+              <li>Полезное и вредное поведение родителей</li>
+              <li>Поддерживающие послания</li>
+              <li>Запрещающие послания</li>
+              <li>Домашнее задание: упражнения</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-12">
+            <h2 class="content-block__title">Раздел 12. Подведение итогов</h2>
+            <ul class="content-list">
+              <li>Подведение итогов</li>
+              <li>Домашнее задание</li>
+            </ul>
+          </article>
+
+          <article class="content-block" id="section-13">
+            <h2 class="content-block__title">Раздел 13</h2>
+            <ul class="content-list">
+              <li>Завершающий прямой эфир</li>
+              <li>Медитация «Переписывание жизненного сценария»</li>
+            </ul>
+            <div class="note">
+              Финальный блок можно в дальнейшем расширить деталями формата, расписанием эфира и дополнительными материалами.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Полные материалы доступны только после оплаты -->
+      <section class="section" data-access-min="paid" hidden>
+        <div class="container">
+          <div class="access-section__header">
+            <span class="eyebrow">Полный доступ</span>
+            <h2 class="section-title">Материалы участника</h2>
+            <p class="section-intro">
+              После оплаты открывается расширенный набор материалов: полноценные уроки, практики, рабочие листы и материалы для самостоятельной интеграции.
+            </p>
+          </div>
+
+          <div class="material-grid">
+            <article class="card material-card">
+              <h3 class="material-card__title">Видео-уроки по разделам 1–5</h3>
+              <p class="material-card__text">
+                Подробные объяснения ключевых понятий: жизненный сценарий, эго-состояния, родительские предписания, жизненные позиции и внутренняя динамика ролей.
+              </p>
+              <p class="material-card__meta">Формат: видеоуроки и конспекты к каждому блоку.</p>
+            </article>
+
+            <article class="card material-card">
+              <h3 class="material-card__title">Практический модуль по стадиям развития</h3>
+              <p class="material-card__text">
+                Разбор стадий существования, действия, мышления, идентичности, структуры и отделения с упражнениями и поддерживающими посланиями.
+              </p>
+              <p class="material-card__meta">Формат: рабочие листы, задания и опорные схемы.</p>
+            </article>
+
+            <article class="card material-card">
+              <h3 class="material-card__title">Аудио-практики и медитации</h3>
+              <p class="material-card__text">
+                Записи для самостоятельной практики, возвращения к чувствам и бережного перепроживания внутренних запретов и сценарных узлов.
+              </p>
+              <p class="material-card__meta">Формат: аудиодорожки и рекомендации по прохождению.</p>
+            </article>
+
+            <article class="card material-card">
+              <h3 class="material-card__title">Домашние задания и интеграция</h3>
+              <p class="material-card__text">
+                Упражнения для закрепления после каждого раздела, итоговая интеграция и финальная медитация «Переписывание жизненного сценария».
+              </p>
+              <p class="material-card__meta">Формат: задания, чек-листы и маршрут прохождения.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>© Юлия Перевозникова</p>
+          <p>Структура тренинга оформлена как отдельные секции для удобной ручной доработки.</p>
+        </div>
+        <div>
+          <p><a href="index.html">На главную</a></p>
+          <p><a href="healing-channel.html">К каналу практик</a></p>
+          <p><a href="therapy.html">К терапии</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- Общий переключатель темы. -->
+    <button
+      class="theme-toggle"
+      type="button"
+      data-theme-toggle
+      aria-label="Переключить тему"
+      aria-pressed="false"
+    >
+      <span class="theme-toggle__label" data-theme-toggle-label>Тёмная</span>
+      <span class="theme-toggle__hint" data-theme-toggle-hint>тема</span>
+    </button>
+    <!-- Общая логика разграничения доступа и демонстрационной оплаты. -->
+    <script src="js/access.js"></script>
+  </body>
+</html>

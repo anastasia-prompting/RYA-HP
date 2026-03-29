@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Программы Юлии Перевозниковой</title>
+    <meta
+      name="description"
+      content="Минималистичный сайт информационных продуктов коуча Юлии Перевозниковой: тренинг «Вырасти Себя Снова» и канал целительных практик."
+    />
+    <!-- Общая логика темы вынесена в отдельный файл. -->
+    <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Ссылка для быстрого перехода к основному содержимому -->
+    <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+
+    <!-- Шапка сайта с навигацией -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-brand">
+          <span class="site-brand__title">Юлия Перевозникова</span>
+          <span class="site-brand__subtitle">Информационные продукты и практики</span>
+        </div>
+
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a class="is-active" href="index.html" aria-current="page">Главная</a></li>
+            <li><a href="training.html">Тренинг</a></li>
+            <li><a href="healing-channel.html">Канал практик</a></li>
+            <li><a href="therapy.html">Терапия</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Основной контент главной страницы -->
+    <main id="main-content" class="page-main">
+      <!-- Приветственный лендинг-блок -->
+      <section class="section section--compact welcome-landing">
+        <div class="container">
+          <article class="content-block welcome-landing__shell">
+            <span class="eyebrow">Добро пожаловать</span>
+            <h2 class="section-title">Рада видеть вас в пространстве проектов Юлии Перевозниковой</h2>
+            <p class="section-intro">
+              Здесь можно выбрать комфортный формат: глубокий обучающий тренинг, регулярные целительные практики
+              или индивидуальную работу 1:1. Начните с того направления, которое откликается вам сейчас больше всего.
+            </p>
+            <div class="welcome-landing__actions section-offset-top">
+              <a class="button" href="#registration">Оставить заявку</a>
+              <button class="button button--secondary" type="button" data-scroll-to-products>
+                Посмотреть все направления
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__box">
+            <span class="eyebrow">Главная страница</span>
+            <h1 class="hero__title">Пространство для глубокой внутренней работы и бережных практик</h1>
+            <p class="hero__text">
+              Этот сайт объединяет несколько направлений: обучающий тренинг «Вырасти Себя Снова», канал
+              целительных практик и модуль индивидуальной терапии. Структура сделана простой и ясной,
+              чтобы посетитель мог быстро понять, какой формат ему ближе сейчас.
+            </p>
+            <div class="hero__actions">
+              <a class="button" href="training.html">Перейти к тренингу</a>
+              <a class="button button--secondary" href="healing-channel.html">Посмотреть канал практик</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Краткий обзор проекта и подхода -->
+      <section class="section">
+        <div class="container quick-overview">
+          <div class="quick-overview__panel">
+            <h2 class="section-title">О проекте</h2>
+            <p class="section-intro">
+              Сайт задуман как спокойная, аккуратная витрина информационных продуктов. Здесь нет перегруженной
+              графики и сложных сценариев: только ясная навигация, удобная структура и тексты, которые легко читать.
+            </p>
+          </div>
+
+          <aside class="quick-overview__panel" aria-label="Краткий обзор разделов сайта">
+            <h2 class="card__title">Что внутри</h2>
+            <ul class="quick-overview__list">
+              <li>Тренинг с подробной структурой по разделам и темам</li>
+              <li>Канал целительных практик с сезонным курсом и архивом медитаций</li>
+              <li>Индивидуальная терапия с пакетами сопровождения и разовыми практиками</li>
+              <li>Единый стиль оформления для дальнейшего расширения проекта</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Основные карточки с продуктами -->
+      <section class="section" id="products">
+        <div class="container">
+          <span class="eyebrow">Продукты</span>
+          <h2 class="section-title">Основные направления</h2>
+          <p class="section-intro">
+            Ниже представлены ключевые направления. Каждое оформлено отдельной карточкой с кратким описанием и ссылкой на страницу.
+          </p>
+
+          <div class="grid grid--three section-offset-top">
+            <article class="card">
+              <h3 class="card__title">Тренинг «Вырасти Себя Снова»</h3>
+              <p class="card__text">
+                Подробная программа по жизненному сценарию, эго-состояниям, родительским программам,
+                стадиям развития и внутренней перестройке через осознавание, практику и домашние задания.
+              </p>
+              <p class="card__meta">13 разделов, выстроенных в логичную обучающую траекторию.</p>
+              <a class="text-link" href="training.html">Открыть страницу тренинга</a>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Канал целительных практик</h3>
+              <p class="card__text">
+                Пространство для регулярного соприкосновения с медитациями и поддерживающими материалами:
+                сезонный курс и архив практик, к которым можно возвращаться в удобное время.
+              </p>
+              <p class="card__meta">Подходит для мягкого регулярного ритма и самостоятельной практики.</p>
+              <a class="text-link" href="healing-channel.html">Открыть страницу канала</a>
+            </article>
+
+            <article class="card">
+              <h3 class="card__title">Индивидуальная Энергетическая Трансформация</h3>
+              <p class="card__text">
+                Формат глубокой индивидуальной работы, где сочетаются коучинг, энерготерапия, сопровождение в течение месяца
+                и отдельные практики под запрос. На странице собраны пакеты, разовые сессии и логика доступа к материалам.
+              </p>
+              <p class="card__meta">Подходит для тех, кому нужен персональный маршрут, а не общий поток.</p>
+              <a class="text-link" href="therapy.html">Открыть модуль терапии</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция регистрации участников -->
+      <section class="section" id="registration">
+        <div class="container registration-layout">
+          <article class="registration-copy content-block">
+            <span class="eyebrow">Регистрация</span>
+            <h2 class="section-title">Заявка на участие</h2>
+            <p class="section-intro">
+              Оставьте имя и один удобный способ связи. Можно указать телефон, email или оба контакта сразу.
+              После успешной регистрации ниже откроется личный кабинет, где можно дозаполнить обязательный профиль участника.
+            </p>
+            <div class="note">
+              Структура формы подготовлена так, чтобы позже можно было подключить backend и отправлять данные на реальный endpoint.
+            </div>
+          </article>
+
+          <section class="registration-form-wrap content-block" aria-labelledby="registration-form-title">
+            <h2 id="registration-form-title" class="content-block__title">Форма регистрации участника</h2>
+            <p class="content-block__subtitle">
+              Обязательны имя и хотя бы один контакт: телефон или адрес электронной почты.
+            </p>
+
+            <!--
+              novalidate отключает стандартные всплывающие сообщения браузера,
+              чтобы показывать единообразные ошибки прямо рядом с полями.
+              action можно заменить на backend endpoint позже.
+            -->
+            <form
+              class="registration-form"
+              action="#"
+              method="post"
+              novalidate
+              data-registration-form
+            >
+              <div class="form-grid">
+                <div class="form-field">
+                  <label class="form-label" for="participant-name">Имя</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="participant-name"
+                    name="name"
+                    autocomplete="given-name"
+                    placeholder="Ваше имя"
+                    data-field="name"
+                    aria-describedby="name-error"
+                  />
+                  <p class="form-error" id="name-error" data-error-for="name" aria-live="polite"></p>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="participant-phone">Контактный номер телефона</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="participant-phone"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="+7 (999) 123-45-67"
+                    data-field="phone"
+                    aria-describedby="phone-error phone-help"
+                  />
+                  <p class="form-help" id="phone-help">Телефон можно указать в свободном удобном формате.</p>
+                  <p class="form-error" id="phone-error" data-error-for="phone" aria-live="polite"></p>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="participant-email">Адрес электронной почты</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="participant-email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="name@example.com"
+                    data-field="email"
+                    aria-describedby="email-error"
+                  />
+                  <p class="form-error" id="email-error" data-error-for="email" aria-live="polite"></p>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="button" type="submit">Зарегистрироваться</button>
+              </div>
+
+              <p class="form-status" data-form-status aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <!-- Короткий FAQ-блок для лендинга -->
+      <section class="section" id="faq">
+        <div class="container">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-title">Частые вопросы перед стартом</h2>
+          <p class="section-intro">
+            Небольшой блок с ответами, чтобы быстрее понять формат работы и следующий шаг.
+          </p>
+
+          <div class="faq section-offset-top" data-faq-root>
+            <article class="faq-item">
+              <button class="faq-item__trigger" type="button" data-faq-trigger aria-expanded="false">
+                С чего лучше начать, если я впервые на сайте?
+              </button>
+              <div class="faq-item__content" data-faq-content hidden>
+                <p>
+                  Начните с раздела «Основные направления» и выберите формат под текущий запрос:
+                  тренинг, канал практик или индивидуальную работу. После этого оставьте заявку через форму регистрации.
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-item__trigger" type="button" data-faq-trigger aria-expanded="false">
+                Что даёт регистрация на главной странице?
+              </button>
+              <div class="faq-item__content" data-faq-content hidden>
+                <p>
+                  Регистрация открывает личный кабинет участника и позволяет получить доступ к расширенным блокам
+                  продуктов (структурам программ и демонстрационной оплате доступа).
+                </p>
+              </div>
+            </article>
+
+            <article class="faq-item">
+              <button class="faq-item__trigger" type="button" data-faq-trigger aria-expanded="false">
+                Можно ли сначала посмотреть, а потом оплатить?
+              </button>
+              <div class="faq-item__content" data-faq-content hidden>
+                <p>
+                  Да. Логика сайта построена по уровням доступа: обзор доступен всем, после регистрации открывается больше деталей,
+                  а затем можно перейти к оплате (в текущей версии реализован демонстрационный сценарий через localStorage).
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Личный кабинет показывается после регистрации или если данные уже есть в localStorage -->
+      <section class="section" id="personal-cabinet" data-personal-cabinet-section hidden>
+        <div class="container account-shell">
+          <div class="account-grid">
+            <article class="content-block account-summary" aria-labelledby="account-summary-title">
+              <span class="eyebrow">Личный кабинет</span>
+              <h2 id="account-summary-title" class="section-title">Профиль участника</h2>
+              <p class="section-intro">
+                После регистрации базовые данные автоматически подтягиваются сюда. Заполните все обязательные поля,
+                чтобы профиль был сохранён полностью.
+              </p>
+
+              <div class="account-summary__panel section-offset-top">
+                <div class="account-badge" data-account-badge>Профиль требует заполнения</div>
+                <dl class="account-summary__list">
+                  <div class="account-summary__item">
+                    <dt>Участник</dt>
+                    <dd data-account-summary-name>—</dd>
+                  </div>
+                  <div class="account-summary__item">
+                    <dt>Телефон</dt>
+                    <dd data-account-summary-phone>—</dd>
+                  </div>
+                  <div class="account-summary__item">
+                    <dt>Email</dt>
+                    <dd data-account-summary-email>—</dd>
+                  </div>
+                  <div class="account-summary__item">
+                    <dt>Город</dt>
+                    <dd data-account-summary-city>—</dd>
+                  </div>
+                </dl>
+              </div>
+            </article>
+
+            <section class="content-block account-form-wrap" aria-labelledby="profile-form-title">
+              <h2 id="profile-form-title" class="content-block__title">Анкета участника</h2>
+              <p class="content-block__subtitle">
+                Все поля ниже обязательны. Если на этапе регистрации был указан только один контакт, второй нужно дозаполнить здесь.
+              </p>
+
+              <form class="profile-form" action="#" method="post" novalidate data-profile-form>
+                <div class="form-grid form-grid--two-columns">
+                  <div class="form-field">
+                    <label class="form-label" for="profile-last-name">Фамилия</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="profile-last-name"
+                      name="lastName"
+                      autocomplete="family-name"
+                      placeholder="Иванова"
+                      data-profile-field="lastName"
+                      aria-describedby="profile-lastName-error"
+                    />
+                    <p class="form-error" id="profile-lastName-error" data-profile-error-for="lastName" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="profile-first-name">Имя</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="profile-first-name"
+                      name="firstName"
+                      autocomplete="given-name"
+                      placeholder="Юлия"
+                      data-profile-field="firstName"
+                      aria-describedby="profile-firstName-error"
+                    />
+                    <p class="form-error" id="profile-firstName-error" data-profile-error-for="firstName" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="profile-middle-name">Отчество</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="profile-middle-name"
+                      name="middleName"
+                      autocomplete="additional-name"
+                      placeholder="Сергеевна"
+                      data-profile-field="middleName"
+                      aria-describedby="profile-middleName-error"
+                    />
+                    <p class="form-error" id="profile-middleName-error" data-profile-error-for="middleName" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="profile-birth-date">Дата рождения</label>
+                    <input
+                      class="form-input"
+                      type="date"
+                      id="profile-birth-date"
+                      name="birthDate"
+                      data-profile-field="birthDate"
+                      aria-describedby="profile-birthDate-error"
+                    />
+                    <p class="form-error" id="profile-birthDate-error" data-profile-error-for="birthDate" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="profile-phone">Контактный номер телефона</label>
+                    <input
+                      class="form-input"
+                      type="tel"
+                      id="profile-phone"
+                      name="phone"
+                      autocomplete="tel"
+                      placeholder="+7 (999) 123-45-67"
+                      data-profile-field="phone"
+                      aria-describedby="profile-phone-error"
+                    />
+                    <p class="form-error" id="profile-phone-error" data-profile-error-for="phone" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form-field">
+                    <label class="form-label" for="profile-city">Город проживания</label>
+                    <input
+                      class="form-input"
+                      type="text"
+                      id="profile-city"
+                      name="city"
+                      autocomplete="address-level2"
+                      placeholder="Москва"
+                      data-profile-field="city"
+                      aria-describedby="profile-city-error"
+                    />
+                    <p class="form-error" id="profile-city-error" data-profile-error-for="city" aria-live="polite"></p>
+                  </div>
+
+                  <div class="form-field form-field--full-width">
+                    <label class="form-label" for="profile-email">Адрес электронной почты</label>
+                    <input
+                      class="form-input"
+                      type="email"
+                      id="profile-email"
+                      name="email"
+                      autocomplete="email"
+                      placeholder="name@example.com"
+                      data-profile-field="email"
+                      aria-describedby="profile-email-error"
+                    />
+                    <p class="form-error" id="profile-email-error" data-profile-error-for="email" aria-live="polite"></p>
+                  </div>
+                </div>
+
+                <div class="form-actions">
+                  <button class="button" type="submit">Сохранить профиль</button>
+                </div>
+
+                <p class="form-status" data-profile-status aria-live="polite"></p>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <p>© <span data-current-year></span> Юлия Перевозникова</p>
+          <p>Минималистичный многостраничный сайт для информационных продуктов.</p>
+        </div>
+        <div>
+          <p><a href="training.html">Тренинг</a></p>
+          <p><a href="healing-channel.html">Канал практик</a></p>
+          <p><a href="therapy.html">Индивидуальная терапия</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Общий переключатель темы. -->
+    <button
+      class="theme-toggle"
+      type="button"
+      data-theme-toggle
+      aria-label="Переключить тему"
+      aria-pressed="false"
+    >
+      <span class="theme-toggle__label" data-theme-toggle-label>Тёмная</span>
+      <span class="theme-toggle__hint" data-theme-toggle-hint>тема</span>
+    </button>
+
+    <!-- Логика регистрации и личного кабинета участника. -->
+    <script src="js/registration.js"></script>
+    <!-- Небольшой интерактив главного лендинга: FAQ и быстрые переходы. -->
+    <script src="js/landing.js"></script>
+  </body>
+</html>
